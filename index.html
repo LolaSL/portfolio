@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio Menu
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="nav__item">
+                        <a href="#introduction" class="nav__link">Introduction</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#about-me" class="nav__link">About Me</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#portfolio" class="nav__link">My Projects</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#resume" class="nav__link">Resume</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="./pages/contacts.html" class="nav__link">Contacts</a>
+                    </div>
+                </div>
+            </div>
+            <div id="nav__item_timeline"></div>
+        </div>
+    </header>
+    <section class="introduction" id="introduction">
+        <div class="animated fadeInRight" id="animated_item">
+            <h1>Hello, I'm Lola Shepota</h1>
+            <h2>Introduction</h2>
+            <div class="center">
+                <button class="button" onclick="myAnimation()">Reload</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-about">
+        <div id="about-me" class="my-information">
+            <div class="my-information__content_wrapper">
+                <h2 class="title my-information__title">Welcome to my website!</h2>
+                <h3>About Me</h3>
+                <div id="grid">
+                    <div id="picture">
+                        <img src="images/picture.jpg" alt="picture" class="picture" />
+                    </div>
+                    <p id="my-information__text">
+                        I'm living in Israel. I started to learn JavaScript, HTML, CSS last year, 2020 becouse I
+                        fond to contact with fancy technologies, vast community and new ideas.
+                        At present
+                        time I'm learning course "Full-Stack Developer". I'm looking for position Junior Front-End
+                        Developer.
+                        I like design, music, travelling and reading.
+                    </p>
+                </div>
+                <div class="filter">
+                    <button class="button-colors" id="button" onclick="function changeColors()">Change colors</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio-section">
+        <div class="main-container">
+            <h2 class="portfolio-heading" style="text-align: center;">My Projects</h2>
+            <h3 style="text-align: center;">Portfolio</h3>
+            <p class="portfolio-information" style="text-align: center;">At the moment in the portfolio you can see some
+                of my projects (HTML /
+                CSS, JavaScript), self-styled
+                layouts.</p>
+            <div class="portfolio-content-wrapper">
+                <div>
+                    <div class="portfolio-item">
+                        <a class="portfolio-item__link" href="pages/styles.html">
+                            <img src="./images/Styles.PNG" class="thumbnail" alt="styles">
+                            <div class="portfolio-item_preview">
+                                <h4 class="portfolio-title">Project Styles</h4>
+                                <p class="portfolio-introduction">Project description: I built basic
+                                    design system for a website. I collected some of the colors, fonts and
+                                    repeating styles.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="portfolio-item">
+                        <a class="portfolio-item__link" href="pages/cheatsheet.html">
+                            <img src="./images/Cheatsheet.PNG" class="thumbnail" alt="Cheatsheet">
+                            <div class="portfolio-item_preview">
+                                <h4 class="portfolio-title">Project Cheatsheet</h4>
+                                <p class="portfolio-introduction">Project description: In this project, I built
+                                    reference cheat sheet which will help me to build more websites in the future. </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="portfolio-item">
+                        <a class="portfolio-item__link" href="pages/gallery.html">
+                            <img src="./images/Gallery.PNG" class="thumbnail" alt="Gallery">
+                            <div class="portfolio-item_preview">
+                                <h4 class="portfolio-title">Project Gallery</h4>
+                                <p class="portfolio-introduction">Project description: In this project, I used flexbox
+                                    to design and build the layout for a company’s homepage - Gallery website. </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume" class="resume-section">
+        <div class="container resume-container">
+            <h2 class="title resume-title" style="text-align: center;">Resume</h2>
+            <p class="resume-information" style="text-align: center;">
+                If you are interested in my candidacy, you can download my resume here.
+            </p>
+            <div class="download-resume-container" style="text-align: center;">
+                <a href="./images/resume.pdf" class="button download-button resume-button" download>Download</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="skill-title">Skills</p>
+        <div id="skills-container-wrapper">
+            <div><i class="fab fa-html5 fa-2x"></i></div>
+            <div><i class="fab fa-css3-alt fa-2x"></i></div>
+            <div><i class="fab fa-js fa-2x"></i></div>
+            <div><i class="fab fa-react fa-2x fa-spin"></i></div>
+            <div><i class="fab fa-git fa-2x"></i></div>
+            <div><i class="fab fa-chrome fa-2x fa-spin"></i></div>
+            <div><i class="fas fa-terminal fa-2x"></i></div>
+            <div><i class="fab fa-npm fa-2x"></i></div>
+            <div><i class="fab fa-node fa-2x"></i></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
