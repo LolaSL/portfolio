@@ -133,8 +133,8 @@ body {
 .picture{
     display: inline-block;
     vertical-align: middle;
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 150px;
     border-radius: 25%;
     align-self: left;
     box-shadow: 3px 3px 3px lightslategray;
