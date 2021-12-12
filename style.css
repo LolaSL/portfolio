@@ -130,15 +130,15 @@ body {
   color: rgb(10, 3, 78);
   font-family: 'Roboto Mono',monospace;
 }
-.picture{
-    display: inline-block;
-    vertical-align: middle;
-    width: 150px;
-    height: 150px;
-    border-radius: 25%;
-    align-self: left;
-    box-shadow: 3px 3px 3px lightslategray;
-    filter: grayscale(100%);
+.responsive {
+  width: 100%;
+  height: auto;   
+  border-radius: 25%;
+  align-self: left;
+  box-shadow: 3px 3px 3px lightslategray;
+  filter: grayscale(100%);  
+  display: inline-block;
+  vertical-align: middle;
 }
 .filter{
     margin-left: 25px;
