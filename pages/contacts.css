@@ -151,13 +151,11 @@ font-family: 'Roboto Mono', monospace;
 
 /* Social links */
 .social__icon_wrapper{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 18px);
-      justify-content: space-around;
-      padding: 15px 15px;
-      border: 1px solid #fff;
-      width: 100%;
-      margin:0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 15px 20px;
+      padding-bottom: 40px;   
 }
 a{
     color:rgb(64, 34, 104)
