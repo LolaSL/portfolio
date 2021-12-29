@@ -461,9 +461,10 @@ margin-bottom: 2em;
 
 /* Skills */
 #skills-container-wrapper{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 18px);
-      justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 15px 20px;
       padding-bottom: 40px;    
 }
 #skills{
